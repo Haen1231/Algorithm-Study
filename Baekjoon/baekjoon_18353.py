@@ -7,9 +7,10 @@ n =  int(sys.stdin.readline())
 army = list(map(int,sys.stdin.readline().split()))
 dp = [1]*(n+1)
 
+#LIS 알고리즘
 for i in range(n):
     for j in range(i):
         if army[j]>army[i]:
             dp[i] = max(dp[i], dp[j]+1)
 
-print(n-max(dp))
+print(n-max(dp)) #max(dp) : 남아있는 병사 수의 최대
