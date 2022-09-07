@@ -1,4 +1,4 @@
-#백준 - 단지번호 붙이기 / 문제번호 : 2667 / 문제 유형 : 래프 탐색  / 실버 1
+#백준 - 단지번호 붙이기 / 문제번호 : 2667 / 문제 유형 : 그래프 탐색  / 실버 1
 #[2667번: 단지번호붙이기](https://www.acmicpc.net/problem/2667)
 from collections import deque
 import sys
@@ -29,6 +29,6 @@ for i in range(n):
                         queue.append((nx, ny))
             dange.append(num)
             
-print(len(dange))
-for i in sorted(dange):
+print(len(dange))#단지수 출력
+for i in sorted(dange): #오름차순 정렬 후 출력
     print(i)
