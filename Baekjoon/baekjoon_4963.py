@@ -1,4 +1,5 @@
 #백준 - 섬의 개수 / 문제번호 : 4963 / 문제 유형 : 그래프 탐색  / 실버 2
+# https://www.acmicpc.net/problem/4963
 from collections import deque
 import sys
 while True:
@@ -12,7 +13,7 @@ while True:
     
     cnt = 0
     direction = [(0,1),(0,-1),(1,0),(-1,0),(-1,-1),(-1,1),(1,-1),(1,1)]
-    #bfs 수행
+    #bfs 실행
     for i in range(h):
         for j in range(w):
             if land[i][j] == 1 and not visited[i][j]:
