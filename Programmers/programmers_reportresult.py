@@ -10,7 +10,7 @@ def solution(id_list, report, k):
     for r in report:
         user, puser = map(str, r.split()) #신고한 사람, 신고 받은 사람
         num = id_list.index(user)   #유저 번호로 미리 변경
-        alist = list(sheet[puser])  #지금까시 사람 별 신고받은 user 목록
+        alist = list(sheet[puser])  #지금까지 사람 별 신고받은 user 목록
         if num not in alist:    #중복 신고인지 확인
             sheet[puser].append(num)   
             check[puser] += 1
